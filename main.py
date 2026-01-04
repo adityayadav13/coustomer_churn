@@ -12,7 +12,7 @@ def predict_churn(data: dict):
 
     # Convert input to model format
     features = np.array([[
-        data.tenure,
+        
         data.monthly_charges,
         data.total_charges,
         data.contract,
@@ -29,3 +29,4 @@ def predict_churn(data: dict):
                 "churn_prediction": int(prediction),
                 "churn_probability": round(float(probability), 4)
             }
+
